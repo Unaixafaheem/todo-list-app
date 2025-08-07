@@ -1,0 +1,30 @@
+/* Base styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+/* Light Mode */
+body.light-mode {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+/* Dark Mode */
+body.dark-mode {
+  background-color: #121212;
+  color: #ffffff;
+}
+
+/* Completed Task Style */
+.list-group-item.completed {
+  text-decoration: line-through;
+  background-color: #d4edda;
+}
+
+/* Optional: Override list item colors in dark mode */
+body.dark-mode .list-group-item {
+  background-color: #1e1e1e;
+  color: #ffffff;
+  border-color: #444;
+}
